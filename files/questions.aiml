@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>HI</pattern>
+    <template>
+        Hello, I am here to help you understand a few career
+        choices that you could make after you've graduated with a degree 
+        in computer science.
+        <button>
+            <text>Understood, please continue.</text>
+            <postback>First Question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>First Question</pattern>
+    <template>
+        Well, I have a few questions for you. This will be the first question.
+        You enjoy helping people more than coding.
+        <button>
+            <text>Agree</text>
+            <postback>VeryInterestedInIT</postback>
+        </button>
+        <button>
+            <text>Disagree</text>
+            <postback>Second Question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Second Question</pattern>
+    <template>
+        You enjoy hard coding. Using programs like python, c, rust, or SQL. 
+        You like to build effective and useful programs. You prefer to build
+        things yourself, understanding all the workings underneath.
+        <button>
+            <text>Agree</text>
+            <postback>VeryInterestedInBackEnd</postback>
+        </button>
+        <button>
+            <text>Disagree</text>
+            <postback>Third Question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Third Question</pattern>
+    <template>
+        You enjoy designing things with interactivity. You prefer to think about
+        how someone might use the technology you create rather than how
+        effective or complex it might be. 
+        <button>
+            <text>Agree</text>
+            <postback>VeryInterestedInFrontEnd</postback>
+        </button>
+        <button>
+            <text>Disagree</text>
+            <postback>Fourth Question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Fourth Question</pattern>
+    <template>
+        You enjoy hacking. You prefer to think about coding as messages sent
+        around the web, rather than programs designed around a computer use.
+        You have more interest in breaking or taking apart something than you
+        do building it.
+        <button>
+            <text>Agree</text>
+            <postback>VeryInterestedInCyberSecurity</postback>
+        </button>
+        <button>
+            <text>Disagree</text>
+            <postback>Fifth Question</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Fifth Question</pattern>
+        <template>
+            You enjoy asking big questions about patterns. You prefer to think
+            about why something is occurring and enjoy understanding how the
+            dots connect.
+            <button>
+                <text>Agree</text>
+                <postback>VeryInterestedInDataScience</postback>
+            </button>
+            <button>
+                <text>Disagree</text>
+                <postback>EndOfProgram</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>EndOfProgram</pattern>
+        <template>
+            Thank you for interacting with me today. This message means you've
+            reached the end of my knowledge. If you wish to start again, simply
+            type "hi" or click below.
+            <button>
+                <text>Let me try again</text>
+                <postback>hi</postback>
+            </button>
+        </template>
+</category>
+<category>
+    <pattern>GOODBYE</pattern>
+    <template>Goodbye, world!</template>
+</category>
+
+</aiml>

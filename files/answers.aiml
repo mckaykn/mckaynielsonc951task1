@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>VeryInterestedInIT</pattern>
+        <template>
+            It sounds like the field of Information Technology could be a good
+            path for you! IT consultants provide strategic advice on how to 
+            utilize technology to acheive goals. They assess systems, recommend
+            improvements and can assist with software implementation, training,
+            and troubleshooting. This field is a blend of helping people and
+            providing tech skills. If this doesn't seem like the field you 
+            would be interested in, please click below
+            <button>
+                <text>What other options are there?</text>
+                <postback>Second Question</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>VeryInterestedInBackEnd</pattern>
+        <template>
+            Looks like working in back-end programming might be a good choice
+            for you! Back end programmers make up the architecture and behind
+            the scenes of computer science. They work closely to optimize and 
+            assess servers, code, utilizing mathematics and logic. They also
+            boast the highest average earnings of most Computer Science fields.
+            If you're not sure that this feels like the best option,
+            click below.
+            <button>
+                <text>What other options are there?</text>
+                <postback>Third Question</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>VeryInterestedInFrontEnd</pattern>
+        <template>
+            Looks like front-end might be a good option for you! Front-end
+            developers work closely with the perspective of an end-user. They
+            work to make their app, website, or program easier to use, more 
+            important to the user, or aesthetically pleasing. Although they
+            generally do less hardcoding than back-end developers, they also
+            often work inside javascript, html, and css. If this doesn't seem
+            like the right option, click below.
+            <button>
+                <text>What other options are there?</text>
+                <postback>Fourth Question</postback>
+                </button>
+        </template>
+</category>
+
+<category>
+    <pattern>VeryInterestedInCyberSecurity</pattern>
+        <template>
+            Seems that you might enjoy CyberSecurity! Specialists in this field
+            work closely with companies to either demonstrate weaknesses in
+            their program, or predict where hackers might attempt to infiltrate.
+            CyberSecurity professionals are highly valued as they work
+            tirelessly to beat enemy threats. If this doesn't sound like
+            something you might be interested in, Click below.
+            <button>
+                <text>What other options are there?</text>
+                <postback>Fifth Question</postback>
+            </button>
+        </template>
+</category>
+
+<category>
+    <pattern>VeryInterestedInDataScience</pattern>
+        <template>
+            Looks like the field of data science might be a good option for you!
+            Data analysts search through piles of unorganized data to find the
+            answers that businesses need. These professionals use mathematics
+            inside programs such as python, r, and sql to generate meaningful
+            viewpoints or extractions. If this doesn't like the right field
+            to you, click below.
+            <button>
+                <text>Are there any more options?</text>
+                <postback>EndOfProgram</postback>
+            </button>
+        </template>
+</category>
+</aiml>
